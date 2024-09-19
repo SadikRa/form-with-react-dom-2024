@@ -1,10 +1,18 @@
+import { useState } from "react";
+
 const TestForm = () => {
+
+
+    const [email, setEmail] = useState(null)
+    console.log(email)
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target.name.value);
-    console.log(event.target.phone.value);
-    console.log(event.target.password.value);
-    console.log("this is test form page");
+    const name = (event.target.name.value);
+    const phone = (event.target.phone.value);
+    const password = (event.target.password.value);
+     const data = {name, phone, password}
+     setEmail(data)
   };
 
   return (
