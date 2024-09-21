@@ -2,9 +2,9 @@ import { useState } from "react";
 
 const TestForm = () => {
 
-
+    // eslint-disable-next-line no-unused-vars
     const [email, setEmail] = useState(null)
-    console.log(email)
+    // console.log(email)
 
   const handleSubmit = (event) => {
     event.preventDefault();
