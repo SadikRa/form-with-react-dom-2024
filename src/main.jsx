@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import TestForm from './components/TestForm/TestForm';
 import AnotherForm from './components/AnotherForm/AnotherForm';
 import RefForm from './components/RefForm/RefForm';
+import HookForm from './components/HookForm/HookForm';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/refform',
         element: <RefForm></RefForm>
+      },
+      {
+        path: '/hookform',
+        element: <HookForm></HookForm>
       },
 
     ]
