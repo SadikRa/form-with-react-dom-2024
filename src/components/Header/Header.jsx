@@ -2,11 +2,12 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div>
+        <div className="flex gap-10">
             <NavLink to={'/TestForm'}>TestForm</NavLink>
-           <div className="pl-7">
+           
            <NavLink  to={'/anotherForm'}>AnotherForm</NavLink>
-           </div>
+           
+           <NavLink to={'/refform'}>refform</NavLink>
         </div>
     );
 };
